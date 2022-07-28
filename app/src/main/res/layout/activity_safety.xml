@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlertFragment">
+    tools:context=".Safety">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -52,7 +52,6 @@
         android:background="@drawable/layout_button_login"
         android:text="send"
         android:textSize="25dp"
-        android:onClick="sendsms"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

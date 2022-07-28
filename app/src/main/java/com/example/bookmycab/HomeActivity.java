@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -31,7 +33,8 @@ public class HomeActivity extends AppCompatActivity {
                     replaceFragment(new TrakingFragment());
                     break;
                 case R.id.alert:
-                    replaceFragment(new AlertFragment());
+                    Intent intent = new Intent(HomeActivity.this,Safety.class);
+                    startActivity(intent);
                     break;
                 case R.id.profile:
                     replaceFragment(new ProfileFragment());
