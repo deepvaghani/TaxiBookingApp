@@ -117,6 +117,14 @@
 
         </LinearLayout>
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="298dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            android:text="Log Out"
+            android:onClick="logout"
+            android:background="@drawable/layout_button_login" />
+
     </LinearLayout>
 
 </LinearLayout>

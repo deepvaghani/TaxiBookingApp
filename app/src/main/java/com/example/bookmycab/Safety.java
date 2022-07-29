@@ -32,7 +32,7 @@ public class Safety extends AppCompatActivity {
                 String msg=message.getText().toString();
 
                 Intent intent = new Intent(getApplicationContext(), Safety.class);
-                PendingIntent pi=PendingIntent.getActivity(getApplicationContext(), 0, intent,0);
+                PendingIntent pi = PendingIntent.getActivity(getApplicationContext(), 0, intent,0);
 
                 SmsManager sms=SmsManager.getDefault();
                 sms.sendTextMessage(no, null, msg, pi,null);

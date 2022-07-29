@@ -15,6 +15,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void phoneLoginClick(View view) {
+        Intent intent = new Intent(LoginActivity.this,PhoneLogin.class);
+        startActivity(intent);
+    }
+
+    public  void googleLoginClick(View view) {
         Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
         startActivity(intent);
     }
